@@ -1,3 +1,4 @@
+# main.py
 import pickle
 
 from sklearn.datasets import load_iris
@@ -10,7 +11,9 @@ iris = load_iris()
 X, y = iris.data, iris.target
 
 # Split dataset into training set and test set
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)  # 70% training and 30% testing
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=1
+)  # 70% training and 30% testing
 
 # Train a logistic regression model
 model = LogisticRegression(max_iter=200)
