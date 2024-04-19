@@ -12,7 +12,7 @@ class TestApp(unittest.TestCase):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.data.decode('utf-8'),
-                         "Welcome to the Iris Flower Prediction API!")
+                         "Welcome tothe Iris Flower Prediction API!")
 
     def test_predict(self):
         data = {
