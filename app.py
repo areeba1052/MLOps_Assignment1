@@ -21,4 +21,4 @@ if __name__ == '__main__':
     app.run(
         debug=True,
         host='0.0.0.0'
-    )  # Added host='0.0.0.0' to make server externally visible if needed
+    )  # Added host='0.0.0.0' to make server externally visible if need
